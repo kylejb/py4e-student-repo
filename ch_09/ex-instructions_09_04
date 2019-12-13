@@ -1,4 +1,4 @@
-ASSIGNMENT INSTRUCTIONS | Ch09, P#04
+ASSIGNMENT INSTRUCTIONS | Ch 09, Q# 04
 
 Write a program to read through the mbox-short.txt and figure out who has sent the greatest number of mail messages. 
 The program looks for 'From ' lines and takes the second word of those lines as the person who sent the mail. 

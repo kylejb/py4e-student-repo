@@ -28,7 +28,6 @@ for word, count in counts.items():
         max_Word = word
 
 print(max_Word, max_Count)
-print(counts.items())
 
 ## QUESTION
 # Why does the following block of code produce significantly more values?
