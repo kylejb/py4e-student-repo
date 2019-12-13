@@ -12,13 +12,23 @@
 # fh = open(fname)
 # count = 0
 # print("There were", count, "lines in the file with From as the first word")
+#
+#
+#
+## ALTERNATIVE ATTEMPT TO PRACTICE ITERATIVE LOOPS
 
 fname = input("Enter file name: ")
 if len(fname) < 1:
     fname = "mbox-short.txt"
 
 fh = open(fname)
-count = 0
+# is there a more elegant way to keep counter?
+# e.g. incorporate a list within the loop to track printed line count
+# and then pass that to the print statement outside of the loop
+# the list can retain the number of values stored.
+# range() can replicate a counter in this case?
+# OR len()
+# count = 0
 
 emailList = list()
 
@@ -27,11 +37,10 @@ for line in fh:
     if not line.startswith("From "):
         continue
     words = line.split()
-    print(words[1])
-    count += 1
+    emailList.append(words[1])
 
+# Is there a way to replicate the output format from ex_08_05
+# Outside of the given requirements for the assignment, is it ever necessary to do so? What's an example use case?
+print(emailList[0 : len(emailList)])
 
-print("There were", count, "lines in the file with From as the first word")
-
-# py4e autograder tool did not accept the below input
-# print(f"There were {count} lines in the file with From as the first word")
+print(f"There were {len(emailList)} lines in the file with From as the first word")
