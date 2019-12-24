@@ -1,4 +1,5 @@
-# Write a program to prompt for a score between 0.0 and 1.0. If the score is out of range, print an error. 
+## Chapter 03 | Exercise 03
+# Write a program to prompt for a score between 0.0 and 1.0. If the score is out of range, print an error.
 # If the score is between 0.0 and 1.0, print a grade using the following table:
 # Score Grade
 # >= 0.9 A
@@ -14,15 +15,24 @@ try:
     iscore = float(score)
     print(f"You entered {iscore}.")
     if iscore > 1.0:
-        print("Error - grading scale: Values cannot exceed 1.0. Please resubmit your request.")
+        print(
+            "Error - grading scale: Values cannot exceed 1.0. Please resubmit your request."
+        )
     elif iscore < 0.0:
-        print("Error - grading scale: Values cannot be lower than 0.0. Please resubmit your request.")
+        print(
+            "Error - grading scale: Values cannot be lower than 0.0. Please resubmit your request."
+        )
 except:
-    print("Error - unrecognized input: Only numerical values between 0.0 and 1.0 are accepted.")
+    print(
+        "Error - unrecognized input: Only numerical values between 0.0 and 1.0 are accepted."
+    )
+    ## QUESTION
     # is it possible to restart or loop back to top instead of quitting?
     quit()
 
 if iscore > 1.0:
+    ## QUESTION
+    # Does "quit()" differ from break and/or continue?
     quit()
 if iscore >= 0.9:
     print("A")

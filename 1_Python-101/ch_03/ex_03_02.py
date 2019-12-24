@@ -1,4 +1,5 @@
-# Improving ex_03_01.py with Try & Except in anticipation of user input error. Prevent crashing.
+## Chapter 03 | Exercise 02
+# Improving ex_03_01.py with Try & Except in anticipation of user input error in order to traceback crash.
 
 hrs = input("Enter Hours:")
 rate = input("Enter your Hourly Wage:")
@@ -17,7 +18,7 @@ if h < 0:
 elif r < 0:
     print("Please try again and input numerical value for hour.")
 elif h <= 40:
-    paycheck = r * h 
+    paycheck = r * h
     print(paycheck)
 elif h > 40:
     overtime_h = h - 40
