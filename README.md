@@ -4,6 +4,7 @@ About: [Python for Everybody Specialization](https://www.coursera.org/specializa
 
 Texbook: [Exploring Data In Python 3](https://www.py4e.com/book.php)
 
+<!DOCTYPE html>
 <html>
 <head>
 <style>
