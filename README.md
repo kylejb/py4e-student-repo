@@ -4,22 +4,6 @@ About: [Python for Everybody Specialization](https://www.coursera.org/specializa
 
 Texbook: [Exploring Data In Python 3](https://www.py4e.com/book.php)
 
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-}
-th {
-  text-align: middle;
-}
-</style>
-</head>
 <body>
 
 <h2>Table of Contents</h2>
