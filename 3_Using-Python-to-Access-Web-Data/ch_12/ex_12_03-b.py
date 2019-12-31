@@ -28,12 +28,12 @@ import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 import ssl
 
-# Ignore SSL certificate errors
+#  Ignore SSL certificate errors
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-# Take input from user
+#  Take input from user
 url = input("Enter URL: ")
 html = urllib.request.urlopen(url, context=ctx).read()
 count = input("Enter count: ")  # number of times to loop
@@ -45,7 +45,8 @@ print("Retrieving:", url)
 
 #  Click through various links to get final name
 ## QUESTION: Why is ">= 0" overshooting my desired output by one href link?
-# while icount >= 0:
+#  while icount >= 0:
+#  ANSWER: 4, 3, 2, 1 (runs four times; adding 0 makes it fifth)
 while icount > 0:
     soup = BeautifulSoup(html, "html.parser")
     links = list()
