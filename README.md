@@ -27,7 +27,7 @@ Texbook: [Exploring Data In Python 3](https://www.py4e.com/book.php)
   <tr>
     <td>11 - 13</td>
     <td> <a href="https://github.com/kylejb/py4e-student-repo/tree/master/3_Using-Python-to-Access-Web-Data">3_Using-Python-to-Access-Web-Data/ch_*</a></td>
-    <td>1... in progress</td>
+    <td>4... in progress</td>
   </tr>
   <tr>
     <td>14 - 15</td>
@@ -35,7 +35,7 @@ Texbook: [Exploring Data In Python 3](https://www.py4e.com/book.php)
     <td>TBD</td>
   </tr>
   <tr>
-    <td></td>
+    <td>16 - 17</td>
     <td> <a href="https://github.com/kylejb/py4e-student-repo/tree/master/5_Capstone-Projects">5_Capstone-Projects/</a></td>
     <td>TBD</td>
 </table>
@@ -108,7 +108,11 @@ Texbook: [Exploring Data In Python 3](https://www.py4e.com/book.php)
     <td> <a href="https://github.com/kylejb/py4e-student-repo/blob/master/3_Using-Python-to-Access-Web-Data/ch_11/ex_11_03.py">ex_11_03.py</a></td>
     <td>1</td>
   </tr>
-
+  <tr>
+  <td>12</td>
+    <td> <a href="https://github.com/kylejb/py4e-student-repo/blob/master/3_Using-Python-to-Access-Web-Data/ch_12/ex_12_02.py">ex_12_02.py</a></td>
+    <td>tbd</td>
+  </tr>
 </table>
 
 </body>
@@ -121,8 +125,8 @@ Texbook: [Exploring Data In Python 3](https://www.py4e.com/book.php)
 # Certifications Earned
 
 
-* 11/24/19  | Fundamentals
-* 12/13/19  | Data Structures 
-* [Pending] | Accessing Web Data
-* [Pending] | Databases
-* [Pending] | Capstone: Retrieving, Processing, and Visualizing Data
+* 11/24/19 | Fundamentals
+* 12/13/19 | Data Structures 
+* Pending  | Accessing Web Data
+* Pending  | Databases
+* Pending  | Capstone: Retrieving, Processing, and Visualizing Data
