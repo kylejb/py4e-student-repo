@@ -33,3 +33,28 @@ counts = tree.findall('.//count')
 Take a look at the Python ElementTree documentation and look for the supported XPath syntax for details. You could also work from the top of the XML down to the 
 comments node and then loop through the child nodes of the comments node. 
 """
+import urllib.request, urllib.parse, urllib.error
+import xml.etree.ElementTree as ET
+import ssl
+
+# Ignore SSL certificate errors
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+url = input("Enter XML-URL to scrape: ")
+print(f"Retrieving {url}")
+
+xml = urllib.request.urlopen(url, context=ctx).read()
+# print(f"Retrieved {len(xml)} characters.")
+# print(xml.decode())
+
+tree = ET.fromstring(xml)
+counts = tree.findall(".//count")
+
+countList = list()
+for count in counts:
+    # Note to self: Had issues with code because of "Nonetype error"; this was resolved by adding int() to "count.text"
+    countList.append(int(count.text))
+
+print(sum(countList))
