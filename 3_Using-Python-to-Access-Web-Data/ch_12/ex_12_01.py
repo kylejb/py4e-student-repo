@@ -22,6 +22,8 @@ while True:
     data = mysock.recv(512)
     if len(data) < 1:
         break
+    ## QUESTION: what does "end" do? with it, the output is not bungled up (e.g., "You can write programs for many..." -- without "end" it appears as though there is a weird /n artifact)?
+    #  print(data.decode(), end="")
     print(data.decode(), end="")
 
 mysock.close()
