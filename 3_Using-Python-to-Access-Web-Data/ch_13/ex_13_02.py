@@ -42,3 +42,58 @@ Retrieved 2733 characters
 Count: 50
 Sum: 2...
 """
+import urllib.request, urllib.parse, urllib.error
+import json
+import ssl
+
+# Ignore SSL certificate errors
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+# Hard coding URL for debugging
+# Still getting "failure to retrieve output" (i.e. js = None)
+# // resolved by removing try, except and using len() for iterative loop
+# url = "http://py4e-data.dr-chuck.net/comments_42.json"
+
+# Take user input of host/domain url for json parsing
+url = input("Please enter URL: ")
+# Checks whether url ends with '.json'; if not, concatenates to url string before python gets to work
+if not url.endswith(".json"):
+    jsonURL = url + ".json"
+else:
+    jsonURL = url
+
+## Question: what is 'addinfourl'? it seems to be the type(uh)?
+#  Creating python object from json data from opening url to storing data.json()
+uh = urllib.request.urlopen(jsonURL, context=ctx)
+data = uh.read().decode()
+print(f"Retrieved {len(data)} characters")
+
+## Question: What's breaking within this block of code below?
+# try:
+#    js = json.loads(data)
+#    print("yay")
+# except:
+#    print("DANGERRRR")
+#    js = None
+
+js = json.loads(data)
+
+#  Flag in event js is None
+## Question: Why does this occur? How do I troubleshoot this issue?
+if not js or "status" not in js or js["status"] != "OK":
+    print("==== Failure To Retrieve ====")
+    print(data)
+
+
+# Printing json output in terminal to assist with parsing the requested data for hw assignment
+print(json.dumps(js, indent=4))
+
+# Is the following also groundwork for a viable solution --> foo = js.get("dic-key-here")?
+countList = list()
+for cnt in range(len(js["comments"])):
+    commentCountText = js["comments"][cnt]["count"]
+    countList.append(commentCountText)
+
+print("Total comment counts:", sum(countList))
