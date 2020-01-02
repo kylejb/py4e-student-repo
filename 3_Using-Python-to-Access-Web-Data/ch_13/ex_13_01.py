@@ -52,7 +52,8 @@ counts = tree.findall(".//count")
 
 countList = list()
 for count in counts:
-    # Note to self: Had issues with code because of "Nonetype error"; this was resolved by adding int() to "count.text"
+    #  Had issues with code because of "Nonetype error"; this was resolved by adding int() to "count.text"
+    ## Question: Why did this resolve it? Having difficulty
     countList.append(int(count.text))
 
 print(sum(countList))
