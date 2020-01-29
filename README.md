@@ -1,4 +1,4 @@
-# Python for Everybody Specialization | 11/2019 - Present
+# Python for Everybody Specialization | 11/2019 - 01/2020
 
 About: [Python for Everybody Specialization](https://www.coursera.org/specializations/python)
 
@@ -128,5 +128,5 @@ Texbook: [Exploring Data In Python 3](https://www.py4e.com/book.php)
 * 11/24/19 | Fundamentals
 * 12/13/19 | Data Structures 
 * 01/01/20 | Accessing Web Data
-* Pending  | Databases
-* Pending  | Capstone: Retrieving, Processing, and Visualizing Data
+* 01/23/20 | Databases
+* 01/2x/20 | Capstone: Retrieving, Processing, and Visualizing Data
