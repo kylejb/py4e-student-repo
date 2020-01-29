@@ -7,3 +7,5 @@ Assignment_Screenshot
 
 # Capstone dataset exceeds GitHub's file size limit of 100.00 MB
 content.sqlite
+index.sqlite
+mapping.sqlite
