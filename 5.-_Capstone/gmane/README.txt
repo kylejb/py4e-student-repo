@@ -1,3 +1,6 @@
+NOTE: The SQL files that are referenced below (e.g., "content.sqlite") are not pushed into this repository due to file size.
+
+
 Analyzing an EMAIL Archive from gmane and vizualizing the data
 using the D3 JavaScript library
 
