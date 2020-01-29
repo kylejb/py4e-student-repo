@@ -1,4 +1,9 @@
 .DS_Store
 .vscode
 .python-version
+
+# Required screenshots of homework as part of weekly assessment 
 Assignment_Screenshot
+
+# Capstone dataset exceeds GitHub's file size limit of 100.00 MB
+content.sqlite
